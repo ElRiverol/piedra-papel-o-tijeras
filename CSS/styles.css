@@ -1,0 +1,75 @@
+:root{
+    --titles: 'Crimson Text', serif;
+    --common: 'Open Sans', sans-serif;
+}
+@import url('https://fonts.googleapis.com/css2?family=Crimson+Text&family=Open+Sans:ital,wght@1,800&display=swap');
+html{
+    box-sizing: border-box;
+    font-size: 62.5%;
+}
+body {
+    margin: 0;
+    padding: 0;
+}
+input{
+    display: block;
+    margin: 1rem auto;
+    padding: 1rem;
+    width: 14rem;
+    text-align: center;
+}
+h1 {
+    font-family: var(--titles);
+    font-size: 2.5rem;
+    text-align: center;
+}
+
+
+.buttons-container{
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.button{
+    min-height: 8rem;
+    max-height: 12rem;
+    margin: .5rem;
+}
+.button img{
+    min-height: 8rem;
+    max-height: 12rem;
+}
+
+
+.results{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+}
+p{
+    font-size: 1.5rem;
+    text-align: center;
+}
+
+
+.image-container{
+    min-height: 8rem;
+    max-height: 12rem;
+}
+.choice{
+    min-height: 8rem;
+    max-height: 12rem;
+}
+.versus{
+    font-weight: 800;
+    font-size: 4rem;
+}
+.player{
+    font-size: 3rem;
+}
+.info{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}

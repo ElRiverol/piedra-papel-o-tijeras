@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./CSS/styles.css">
+    <title>Document</title>
+    <script src="./JS/script.js"></script>
+</head>
+<body>
+    <main>
+        <section class="buttons">
+            <h1 id="title">Piedra, Papel o Tijeras</h1>
+            <input type="button" onclick="normal()" value="Tematica normal"/>
+            <input type="button" onclick="pokemon()" value="Tematica Pokémon" />
+            <div class="buttons-container">
+                <div class="button" id="1""><img src="./pics/rock.png" onclick="game(normal, 1)" alt="Piedra"></div>
+                <div class="button" id="2"><img src="./pics/paper.png" onclick="game(normal, 2)" alt="Papel"></div>
+                <div class="button" id="3"><img src="./pics/scissors.png" onclick="game(normal, 3)" alt="Tijeras"></div>
+            </div>
+            <div class="results">
+                <div>
+                    <p class="player">Jugador</p>
+                    <div id="imagePlayer" class="image-container">
+                        <img class="choice" src="./pics/interrogation.png" alt="Interrogation symbol">
+                    </div>
+                </div>
+                <p class="versus">VS.</p>
+                <div>
+                    <p class="player">PC</p>
+                    <div id="imagePC" class="image-container">
+                        <img class="choice" src="./pics/interrogation.png" alt="Interrogation symbol">
+                    </div>
+                </div>
+            </div>
+            <p id="messages">Selecciona tu movimiento para empezar</p>
+        </section>
+        <section class="info">
+            <p>Total de juegos: <span id="total">0</span></p>
+            <p>Victorias: <span id="victories">0</span></p>
+            <p>Derrotas: <span id="defeats">0</span></p>
+            <p>Empates: <span id="draws">0</span></p>
+        </section>
+    </main>
+</body>
+</html>
